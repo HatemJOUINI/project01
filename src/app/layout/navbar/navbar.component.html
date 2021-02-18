@@ -1,0 +1,21 @@
+<div  class="mt-2 py-3 text-white" fxLayout="column" fxLayoutAlign="center center"
+      fxLayoutGap="7px">
+    </div>  
+<ng-sidebar-container> 
+    <ng-sidebar [opened]="opened"> 
+    <button (click)="toggleSidebar()"> Close sidebar </button>
+    <ul class="menu">
+            <li> <span class="material-icons">
+                event
+                </span><a  routerLink="/"> notification </a> </li>
+            <span class="material-icons">
+                account_circle
+                </span>  <li><a routerLink="/"> User  </a> </li>
+            <li> <a routerLink="/"> Phone </a> </li> 
+
+    </ul>
+    </ng-sidebar >
+    <div ng-sidebar-content> 
+    <button (click)="toggleSidebar()"> Open Side bar </button>
+    </div>
+</ng-sidebar-container>
